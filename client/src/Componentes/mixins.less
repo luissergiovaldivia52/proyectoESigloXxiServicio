@@ -1,0 +1,50 @@
+// Mixins acá
+
+.flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.roundImg(@radius){
+    border-radius: @radius;
+  }
+
+  .boton(@color, @background, @border, @margin) {
+    background-color: @background;
+        color: @color;
+        width: 120px;
+        font-size: 20px;
+        font-weight:500 ;
+        margin: @margin;
+
+        border: 2px solid black;
+       //border-color: @color;
+        padding: 10px;
+        cursor: pointer;
+
+        border-radius: @border;
+
+        &:hover{
+            background-color: @color;
+            color: @background;
+            border: 1px solid black;
+          }
+  }
+
+  .fontHome(){
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .icon(){
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }

@@ -1,0 +1,16 @@
+.btn .prueba {
+  background-color: red;
+  color: blue;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 500 ;
+  border: 2px solid black;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn .prueba:hover {
+  background-color: blue;
+  color: red;
+  border: 1px solid black;
+}

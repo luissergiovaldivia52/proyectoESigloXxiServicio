@@ -1,0 +1,20 @@
+@import '../mixins';
+@import '../variables';
+
+
+.footer {
+    .flex(row, space-around, center);
+    //height: 80px;
+    padding: 10px;
+    background-color: @footer-background;
+    color:@footer-font-color;
+    .name {
+        .flex(row, center, center);
+       margin: 10px;
+    }
+
+    .mail {
+        .flex(row, center, center);
+        margin: 10px;
+    }
+}
