@@ -1,0 +1,114 @@
+/* home */
+
+@import "../mixins.less";
+
+@color-saturado: linear-gradient(90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(221, 16, 57, 1) 50%,
+    rgba(0, 212, 255, 1) 100%);
+
+.flex-home() {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-selection() {
+  border: 2px solid @color-saturado;
+  margin: 5px;
+  border-style: hidden;
+}
+
+.home {
+  width: 1050px;
+  height: 600px;
+  /* background-color: aliceblue;*/
+  background: @color-saturado;
+
+  .container {
+    .fontHome;
+    // background-color: #af47ff;
+    background-color: @color-saturado;
+    padding: 10px;
+    width: 98%;
+
+    .child {
+      background-color: @color-saturado;
+      padding: 30px;
+
+      .selection {
+        .flex-home();
+
+        background-color: @color-saturado;
+        width: 95%;
+
+        padding: 20px;
+        border: 2px solid @color-saturado;
+        //border-style: solid;
+        border-style: hidden;
+
+        .firstRow {
+          .flex(row, space-between, flex-start);
+
+          .flexbox {
+            .flex-home();
+
+            .box-selection();
+          }
+        }
+
+        .secondRow {
+          .flex(row, space-between, flex-start);
+
+          .flexbox {
+            .flex-home();
+
+            .box-selection();
+          }
+        }
+
+        .thirdRow {
+          .flex(row, center, center);
+        }
+
+        .fourthRow {
+          .flex(row, center, center);
+        }
+      }
+    }
+  }
+
+  .cards {
+    .fontHome;
+    width: 100%;
+    height: 50%;
+    padding: 2px;
+
+    .card {
+      .flex(row, space-evenly, center);
+      padding: 2px;
+
+      .box {
+        
+        /*width: 30%;*/
+        width: 12%;
+        // height: 200px;
+        height: 50%;
+        border: 1px  #f7a239;
+        padding: 5px;
+        margin: 3px;
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          /* height: auto;*/
+        }
+
+        .camara{
+          .flex(row, center, center)
+        }
+
+      }
+    }
+  }
+}

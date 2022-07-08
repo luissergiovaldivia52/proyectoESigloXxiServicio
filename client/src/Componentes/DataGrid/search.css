@@ -1,0 +1,23 @@
+.search .search-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.search .search-type .btnSearch {
+  background-color: purple;
+  color: white;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 500 ;
+  margin: 5px;
+  border: 2px solid black;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.search .search-type .btnSearch:hover {
+  background-color: white;
+  color: purple;
+  border: 1px solid black;
+}

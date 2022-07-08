@@ -1,0 +1,61 @@
+// Código de Nav acá
+@import '../mixins';
+@import '../variables';
+
+  .menu {
+   
+    
+     .flex(row, flex-start, center);
+    height: 80px;
+    padding: 10px;
+    background-color: @nav-bg;
+    color:@nav-font;
+    .logo{
+      .flex(column, center, center);
+      width: auto;
+    }
+    .titulo-list{
+      .flex(column, center, center);
+      width: 1000px;
+      height: 50px;
+
+      .titulonav {
+        .flex(row, center, center); 
+        padding: 10px;
+        width: 70%;
+        margin: auto;
+      }
+  
+      .list {
+        .flex(row, space-around, center);
+        padding: 10px;
+        width: 70%;
+        margin: auto;
+          //.flex(column, space-around, center);
+        
+  
+        .list-item {
+          //display: inline-block;
+          
+  
+          a {
+            //display: block;
+            color: @nav-font;
+            text-align: center;
+            padding: 8px 5px;
+            margin: 5px;
+            text-decoration: none;
+  
+            font-family: sans-serif;
+            font-size: medium;
+          }
+          a:hover {
+            background-color: #e91e63;
+          }
+        }
+      }
+
+
+    }
+    
+  }
