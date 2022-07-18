@@ -1,0 +1,32 @@
+@import "../../../mixins.less";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+
+.formContainer{
+                height: 2.5rem;
+                .s-center(center);
+        .form{
+            display: inline-flex;
+            .input{
+                line-height: 2.5rem;
+                width: 15rem;
+                background: none;
+                border: 1px solid rgba(255, 255, 255, .4);
+                padding: 0 .5rem;
+                border-radius: .25rem 0 0 .25rem;
+
+                ::placeholder{
+                    color: rgba(255, 255, 255, .5);
+                }
+
+            }
+            .button{
+                    padding: 0 1rem;
+                    border-radius: 0 .25rem .25rem 0;
+                    border: none;
+                    
+            }
+        }
+
+
+}

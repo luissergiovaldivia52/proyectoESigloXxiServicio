@@ -1,0 +1,9 @@
+#description {
+  font-size: 0.8rem;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  #description {
+    font-size: 1.5rem;
+  }
+}

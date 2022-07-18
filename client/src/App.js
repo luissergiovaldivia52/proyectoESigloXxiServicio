@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Router, Routes } from "react-router-dom";
 
 import NavBar from "./Componentes/NavBar/NavBar";
-import Detalle from "./Componentes/DataGrid/Detalle";
-import Home from "./Componentes/Home/Home";
+
+
 import Inicio from "./Componentes/Inicio/inicio";
 import Formulario from "./Componentes/Formulario/Formulario";
 import Footer from "./Componentes/Footer/Footer";
@@ -19,9 +19,10 @@ function App() {
 <Routes>
   <Route  exact path="/" element={<Inicio />} /> 
   
-  <Route  path="/rovers" element={<Home />} />
-  {/* <Route exact path="/:photo/:id" element={<Detalle />} /> */}
-  {/* <Route exact path="/register" element={<Formulario />} /> */}
+  {/* <Route  path="/servicios" element={<Servicios />} />
+  <Route  path="/proyectos" element={<Proyectos />} /> */}
+  <Route  path="/contactarnos" element={<Formulario />} />
+
 </Routes>
 
    

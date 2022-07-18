@@ -1,0 +1,31 @@
+/* Inicio */
+.absolute {
+  position: absolute;
+}
+.imagen .graphic {
+  position: relative;
+  display: grid;
+  padding-top: 3rem;
+  grid-template-columns: 1fr 75%;
+}
+.imagen .graphic .graphic-man {
+  width: 100%;
+  grid-column-start: 2;
+}
+.imagen .graphic .graphic-go {
+  position: absolute;
+  mix-blend-mode: color-burn;
+  top: 32%;
+  right: 51%;
+  width: 9%;
+}
+.imagen .graphic-circle {
+  position: absolute;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+}
+.imagen .graphic-circle img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: color-burn;
+}
