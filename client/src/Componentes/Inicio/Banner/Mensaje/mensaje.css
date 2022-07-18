@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/orbitron/v24/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyxSmxpg.ttf) format('truetype');
+}
+.mensaje .form-hint {
+  font-size: 0.7rem;
+  margin: 0 0 1rem;
+  text-align: center;
+}

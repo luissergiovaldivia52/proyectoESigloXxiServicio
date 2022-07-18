@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/orbitron/v24/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyxSmxpg.ttf) format('truetype');
+}
+.formContainer {
+  height: 2.5rem;
+  text-align: center;
+}
+.formContainer .form {
+  display: inline-flex;
+}
+.formContainer .form .input {
+  line-height: 2.5rem;
+  width: 15rem;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0 0.5rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.formContainer .form .input ::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.formContainer .form .button {
+  padding: 0 1rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: none;
+}

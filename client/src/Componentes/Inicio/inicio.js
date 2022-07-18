@@ -1,30 +1,36 @@
 import React, { useState, useEffect } from "react";
 
-import Imagen from "./imagen/imagen";
+import Imagen from "./Graphic/imagen/imagen";
 import EfectoCss from "./efecto";
-import './variable'
+import Titulo from "./Banner/Titulo/Titulo";
+import Description from "../Inicio/Banner/Description/description.js";
+import Form from "../Inicio/Banner/Form/form-container";
+import Mensaje from "../Inicio/Banner/Mensaje/mensaje.js";
+import "./variable";
 import variable from "./variable";
-import './inicio.css'
-
+import "./inicio.css";
 
 function Inicio() {
- 
   useEffect(() => {
-    
-    EfectoCss();
+    //EfectoCss();
   }, []);
-console.log("variable swap: " +  variable.swap );
+  //console.log("variable swap: " +  variable.swap );
   return (
-    <div className="diferenteDiv">
-      <Imagen />
+    <section className="main-banner">
+      {/* grid-container  */}
+      <div className="grid-container">
+        {/*   banner-container */}
 
-      <div className="btn">
-        <button className="prueba">
-        Registrarse
-        </button>
-       </div>
-
-    </div>
+        <Titulo />
+        <Description />
+        <Form />
+        <Mensaje />
+      </div>
+      <div className="graphic"> 
+      {/*   Graphic */}
+      <Imagen /> 
+      </div>
+    </section>
   );
 }
 export default Inicio;

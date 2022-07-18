@@ -1,5 +1,20 @@
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/orbitron/v24/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyxSmxpg.ttf) format('truetype');
+}
+html,
 body {
+  height: 100%;
+  width: 100;
   margin: 0;
-  display: grid;
-  place-items: center;
+}
+body {
+  font-family: Manrope, sans-serif;
+  line-height: 1.6;
+}
+@media screen and (min-width: 1024px) {
+  text-align: left;
 }

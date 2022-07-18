@@ -1,50 +1,72 @@
 // Mixins acá
 
 .flex(@direction, @justify, @align) {
-    display: flex;
-    flex-direction: @direction;
-    justify-content: @justify;
-    align-content: @align;
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-content: @align;
 }
 
-.roundImg(@radius){
-    border-radius: @radius;
+.roundImg(@radius) {
+  border-radius: @radius;
+}
+
+.absolute{
+  position: absolute
+  //display: none;
+}
+
+.boton(@color, @background, @border, @margin) {
+  background-color: @background;
+  color: @color;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: @margin;
+
+  border: 2px solid black;
+  //border-color: @color;
+  padding: 10px;
+  cursor: pointer;
+
+  border-radius: @border;
+
+  &:hover {
+    background-color: @color;
+    color: @background;
+    border: 1px solid black;
   }
+}
 
-  .boton(@color, @background, @border, @margin) {
-    background-color: @background;
-        color: @color;
-        width: 120px;
-        font-size: 20px;
-        font-weight:500 ;
-        margin: @margin;
+.fontHome() {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
 
-        border: 2px solid black;
-       //border-color: @color;
-        padding: 10px;
-        cursor: pointer;
+.icon() {
+  color: #191919;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-        border-radius: @border;
+.s-center(@text-align) {
+  text-align: @text-align;
+}
 
-        &:hover{
-            background-color: @color;
-            color: @background;
-            border: 1px solid black;
-          }
+.media(@fontsize) {
+  @media screen and (min-width: 1024px) {
+    font-size: @fontsize;
   }
+}
 
-  .fontHome(){
-    color: white;
-    font-weight: bold;
-    font-size: 15px;
-  }
-
-  .icon(){
-    color: #191919;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+.tamagno(@height, @width) {
+  // height: @height;
+  // width: @width;
+  height: @height;
+  width: @width;
+}
