@@ -4,10 +4,10 @@ import Imagen from "./Graphic/imagen/imagen";
 import EfectoCss from "./efecto";
 import Titulo from "./Banner/Titulo/Titulo";
 import Description from "../Inicio/Banner/Description/description.js";
-import Form from "../Inicio/Banner/Form/form-container";
+
 import Mensaje from "../Inicio/Banner/Mensaje/mensaje.js";
 import "./variable";
-import variable from "./variable";
+
 import "./inicio.css";
 
 function Inicio() {
@@ -23,7 +23,7 @@ function Inicio() {
 
         <Titulo />
         <Description />
-        <Form />
+   
         <Mensaje />
       </div>
       <div className="graphic"> 
