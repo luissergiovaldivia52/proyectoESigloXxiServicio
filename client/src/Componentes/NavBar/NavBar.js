@@ -25,7 +25,7 @@ function NavBar() {
             <NavLink exact to="/">Inicio</NavLink>
             {/* <NavLink to="rovers">Home</NavLink> */}
 
-            <NavLink to="formulario">Contactarnos</NavLink>
+            <NavLink to="contactarnos">Contactarnos</NavLink>
           </li>
         </ul>
       </div>
