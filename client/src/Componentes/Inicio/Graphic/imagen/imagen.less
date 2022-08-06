@@ -1,67 +1,58 @@
 /* Inicio */
 @import "../../../mixins.less";
 
-.imagen{
-  
- 
-
-
-  // img {
-  //   max-width: 100%;
-  //   max-height: 100%;
-  //  }
-   .graphic{
-    position: relative;
+.graphic {
+  position: relative;
   display: grid;
   padding-top: 3rem;
-    grid-template-columns: 1fr 75%;
-    .graphic-man {
+  grid-template-columns: 1fr 75%;
+  .graphic-man {
     //  height: 500px;
-      //width: 500px;
-    
-width: 100%;
-grid-column-start: 2;
-     };
-     .graphic-go{
-      .absolute();
-      //.tamagno(50px, 100px);
-      mix-blend-mode: color-burn;
-      top: 32%;
-    right: 51%;
-    //  width: 100px;
-   // display: none
-   width:9%;
-     }
+    //width: 500px;
 
-   }
-   .graphic-circle{
+    width: 100%;
+    grid-column-start: 2;
+  }
+  .graphic-go {
     .absolute();
-    height: 100%;
-    aspect-ratio: 1 / 1;
 
-    img{
+    //.tamagno(50px, 100px);
+    mix-blend-mode: screen;
+    top: 24%;
+    right: 28%;
+    //  width: 100px;
+    //display: none;
+    width: 10%;
+    transform: rotate(5deg);
+  }
+
+  .graphic-circle {
+    .absolute();
+//position: absolute;
+    height: 40%;
+    aspect-ratio: 1/1;
+
+    img {
       width: 100%;
       height: 100%;
-      //.tamagno(100%, 100%);
-      mix-blend-mode:color-burn;
+      mix-blend-mode: screen;
+      .absolute()
     }
 
-    .graphic-logo{
-   // .tamagno(100px, 100px)
-
-    };
-
-    .graphic-exterior{
-     // .tamagno(100px, 100px)
-    };
-
-    .graphic-interior{
-     // .tamagno(100px, 100px)
-    };
-    .graphic-energy{
-      //.tamagno(100px, 100px)
+    .graphic-tecnologia {
+     // .absolute();
+      // .tamagno(100px, 100px)
+      animation: turn1 5s linear infinite;
     }
-   }
-  
+    .graphic-energy {
+    //  .absolute();
+      animation: turn1 15s linear infinite;
+    }
 
+    @keyframes turn1 {
+      to {
+        transform: rotate(1turn);
+      }
+    }
+  }
 }

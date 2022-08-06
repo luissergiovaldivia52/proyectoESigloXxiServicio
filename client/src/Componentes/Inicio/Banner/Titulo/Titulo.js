@@ -9,9 +9,10 @@ function Titulo() {
   return (
     <div className="title">
       <h1 > 
-            <span className="line-1">Dominamos la tecnologia </span>
+      <span className="line-2">eSigloXXI servicio </span>
+          
             <br/>
-            <span className="line-2">eSigloXXI servicio </span>
+            <span className="line-1">Dominamos la tecnologia </span> 
             
       </h1>
     </div>

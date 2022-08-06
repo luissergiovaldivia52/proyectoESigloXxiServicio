@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Router } from "react-router-dom";
 
-//import Logo from "../../Img/MARTE.png";
+import Logo from "./Img/Logo.jpg";
 
 import "./NavBar.css";
 
@@ -11,9 +11,9 @@ function NavBar() {
       <div className="logo">
         <img
           id="logoHenry"
-          src= ""  //{Logo}
-          width="30"
-          height="30"
+          src= {Logo}  //{Logo}
+          width="100"
+          height="100"
           className="d-inline-block align-top"
           alt=""
         />
@@ -24,7 +24,8 @@ function NavBar() {
           <li className="list-item">
             <NavLink exact to="/">Inicio</NavLink>
             {/* <NavLink to="rovers">Home</NavLink> */}
-
+            <NavLink to="description">Descripcion</NavLink>
+            
             <NavLink to="contactarnos">Contactarnos</NavLink>
           </li>
         </ul>

@@ -2,30 +2,43 @@
 .absolute {
   position: absolute;
 }
-.imagen .graphic {
+.graphic {
   position: relative;
   display: grid;
   padding-top: 3rem;
   grid-template-columns: 1fr 75%;
 }
-.imagen .graphic .graphic-man {
+.graphic .graphic-man {
   width: 100%;
   grid-column-start: 2;
 }
-.imagen .graphic .graphic-go {
+.graphic .graphic-go {
   position: absolute;
-  mix-blend-mode: color-burn;
-  top: 32%;
-  right: 51%;
-  width: 9%;
+  mix-blend-mode: screen;
+  top: 24%;
+  right: 28%;
+  width: 10%;
+  transform: rotate(5deg);
 }
-.imagen .graphic-circle {
+.graphic .graphic-circle {
   position: absolute;
-  height: 100%;
-  aspect-ratio: 1 / 1;
+  height: 40%;
+  aspect-ratio: 1/1;
 }
-.imagen .graphic-circle img {
+.graphic .graphic-circle img {
   width: 100%;
   height: 100%;
-  mix-blend-mode: color-burn;
+  mix-blend-mode: screen;
+  position: absolute;
+}
+.graphic .graphic-circle .graphic-tecnologia {
+  animation: turn1 5s linear infinite;
+}
+.graphic .graphic-circle .graphic-energy {
+  animation: turn1 15s linear infinite;
+}
+@keyframes turn1 {
+  to {
+    transform: rotate(1turn);
+  }
 }
