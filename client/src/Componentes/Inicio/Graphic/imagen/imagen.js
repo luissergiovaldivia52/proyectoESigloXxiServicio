@@ -3,27 +3,32 @@ import React, { useEffect, useState } from "react";
 import "./imagen.css";
 
 import Man from "../Img/man.png";
-import Go from "../Img/logo-golang400.png";
-import Exterior from "../Img/circle-logo200.png";
-import Interior from "../Img/frame-circle200.png";
-import Logo from "../Img/logo200.png";
-import Energy from "../Img/energy400.png"
+import Go from "../Img/logo-golangDraw.png";
+import Tecnologia from "../Img/tecnologiasPaint.png";
+// import Interior from "../Img/frame-circle200.png";
+ import Logo from "../Img/logo.png";
+// import Energy from "../Img/energyDraw.png"
+//import Energy from "../Img/dreamstime.png";
+import Energy from "../Img/21157073.jpg";
 
 function Imagen() {
   return (
-    <div className="imagen">
+    //  <div className="imagen">
       <div className="graphic">
         <img className="graphic-man" src={Man} alt="Man" />
-        <img className="graphic-go" src={Go} alt="Go" />
-      </div>
+        <img className="graphic-go" src={Go} alt="Go" />, 
 
       <div className="graphic-circle">
-        <img className="graphic-logo" src={Logo} alt="Logo" />
-        <img className="graphic-exterior" src={Exterior} alt="Exterior" />
-        <img className="graphic-interior" src={Interior} alt="Interior" />
+            <img className="graphic-tecnologia" src={Tecnologia} alt="Tecnologia" />
         <img className="graphic-energy" src={Energy} alt="Energy" />
+        {/* <img className="graphic-logo" src={Logo} alt="Logo" /> */}
+      {/* <img className="graphic-exterior" src={Exterior} alt="Exterior" />
+        <img className="graphic-interior" src={Interior} alt="Interior" />*/}
+    
       </div>
-    </div>
+      </div>
+
+    //  </div>
   );
 }
 

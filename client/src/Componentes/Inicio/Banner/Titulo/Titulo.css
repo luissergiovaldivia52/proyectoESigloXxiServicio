@@ -1,3 +1,6 @@
+.absolute {
+  position: absolute;
+}
 @font-face {
   font-family: 'Orbitron';
   font-style: normal;
@@ -16,5 +19,5 @@
   }
 }
 .title .line-2 {
-  color: #16f4d0;
+  color: #CA5A12;
 }

@@ -20,15 +20,13 @@ function Inicio() {
       {/* grid-container  */}
       <div className="grid-container">
         {/*   banner-container */}
-
-        <Titulo />
-        <Description />
-   
-        <Mensaje />
-      </div>
-      <div className="graphic"> 
-      {/*   Graphic */}
-      <Imagen /> 
+        <div className="content">
+          <Titulo />
+          <Description />
+        </div>
+        <div className="graphic-principal">
+          <Imagen />
+        </div>
       </div>
     </section>
   );
