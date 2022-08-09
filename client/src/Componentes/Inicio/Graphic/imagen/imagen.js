@@ -4,7 +4,8 @@ import "./imagen.css";
 
 import Man from "../Img/man.png";
 import Go from "../Img/logo-golangDraw.png";
-import Tecnologia from "../Img/tecnologiasInk.png";
+import Tecnologia from "../Img/tecnologiasInk.png"
+//import Tecnologia from "../Img/tecnologiasInk.png";
 // import Interior from "../Img/frame-circle200.png";
  import Logo from "../Img/logo.png";
 // import Energy from "../Img/energyDraw.png"
