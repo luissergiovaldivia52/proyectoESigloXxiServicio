@@ -8,7 +8,6 @@ function Description() {
         <span className="line-1">El poder innovador de la generación </span>
         <br />
         <br/>
-        <br/>
         <span className="line-2">
         La generación de nosotros, <br/> <br/> la generación de Internet
          </span>
