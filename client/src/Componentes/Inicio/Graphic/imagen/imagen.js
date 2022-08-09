@@ -4,12 +4,12 @@ import "./imagen.css";
 
 import Man from "../Img/man.png";
 import Go from "../Img/logo-golangDraw.png";
-import Tecnologia from "../Img/tecnologiasPaint.png";
+import Tecnologia from "../Img/tecnologiasInk.png";
 // import Interior from "../Img/frame-circle200.png";
  import Logo from "../Img/logo.png";
 // import Energy from "../Img/energyDraw.png"
 //import Energy from "../Img/dreamstime.png";
-import Energy from "../Img/21157073.jpg";
+import Energy from "../Img/21157073.png";
 
 function Imagen() {
   return (
