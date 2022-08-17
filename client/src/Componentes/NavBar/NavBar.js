@@ -24,7 +24,7 @@ function NavBar() {
           <li className="list-item">
             <NavLink exact to="/">Inicio</NavLink>
             {/* <NavLink to="rovers">Home</NavLink> */}
-            <NavLink to="description">Descripcion</NavLink>
+            <NavLink to="description">Nosotros</NavLink>
             
             <NavLink to="contactarnos">Contactarnos</NavLink>
           </li>
