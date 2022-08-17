@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Imagen from "./Graphic/imagen/imagen";
 import EfectoCss from "./efecto";
 import Titulo from "./Banner/Titulo/Titulo";
-import Description from "../Inicio/Banner/Description/description.js";
+import Description from "./Banner/DescriptionInicio/descriptionInicio.js";
 
 import Mensaje from "../Inicio/Banner/Mensaje/mensaje.js";
 import "./variable";

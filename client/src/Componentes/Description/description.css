@@ -2,6 +2,7 @@
   position: absolute;
 }
 #description {
+  background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #225B79, #3892c2 44.41%, #216080 56.43%, #19475F 69.58%, #102B39 100%, #010304 0);
   /* font-size: 0.8rem;*/
   text-align: center;
   line-height: 0.6;
@@ -13,11 +14,13 @@
 }
 #description .line-1 {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #e71647;
+  color: #ffffff;
   font-size: 36px;
   margin-top: 50px;
 }
 #description .line-2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #ffffff;
   font-size: 17px;
   padding-left: 0px;
   padding-top: 0px;
@@ -31,4 +34,29 @@
   font-size: 17px;
   padding-left: 0px;
   padding-top: 0px;
+}
+#description .conteiner-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+#description .conteiner-gallery .gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+#description .conteiner-gallery .gallery :hover {
+  border: 1px solid #777;
+}
+#description .conteiner-gallery .gallery img {
+  width: 100%;
+  height: auto;
+}
+#description .conteiner-gallery .gallery .desc {
+  padding: 15px;
+  text-align: center;
 }

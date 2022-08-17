@@ -1,23 +1,23 @@
 .absolute {
   position: absolute;
 }
-#description {
+#descriptionInicio {
   /* font-size: 0.8rem;*/
   text-align: center;
   line-height: 0.6;
 }
 @media screen and (min-width: 1024px) {
-  #description {
+  #descriptionInicio {
     font-size: 1.5rem;
   }
 }
-#description .line-1 {
+#descriptionInicio .line-1 {
   font-family: 'Roboto Condensed', sans-serif;
   color: #e71647;
   font-size: 30px;
   margin-top: 50px;
 }
-#description .line-2 {
+#descriptionInicio .line-2 {
   font-family: 'Roboto Condensed', sans-serif;
   color: #e71647;
   font-size: 30px;
