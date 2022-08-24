@@ -1,7 +1,7 @@
 
 @import "../mixins.less";
 
-#description{
+.main-description{
     background: radial-gradient(
         79.43% 251.58% at 23.18% 73.07%,
         #225B79,
@@ -11,6 +11,16 @@
         #102B39 100%,
         #010304 0
      );
+     @media screen and (min-width: 1024px){
+      .container-description{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1200px;
+        margin: auto;
+      }
+      
+    }
+     padding: 2rem 1rem 0;
    /* font-size: 0.8rem;*/
     .s-center(center);
     .media(1.5rem); 

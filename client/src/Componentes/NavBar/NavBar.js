@@ -19,7 +19,7 @@ function NavBar() {
         />
       </div>
       <div className="titulo-list">
-        <h2 className="titulonav">Desarrollos eSigloXXI servicios</h2>
+        <h2 className="titulonav">eSigloXXI servicios</h2>
         <ul className="list">
           <li className="list-item">
             <NavLink exact to="/">Inicio</NavLink>

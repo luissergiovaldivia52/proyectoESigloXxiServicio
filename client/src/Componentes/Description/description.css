@@ -1,62 +1,71 @@
 .absolute {
   position: absolute;
 }
-#description {
+.main-description {
   background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #225B79, #3892c2 44.41%, #216080 56.43%, #19475F 69.58%, #102B39 100%, #010304 0);
+  padding: 2rem 1rem 0;
   /* font-size: 0.8rem;*/
   text-align: center;
   line-height: 0.6;
 }
 @media screen and (min-width: 1024px) {
-  #description {
+  .main-description .container-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-description {
     font-size: 1.5rem;
   }
 }
-#description .line-1 {
+.main-description .line-1 {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
   font-size: 36px;
   margin-top: 50px;
 }
-#description .line-2 {
+.main-description .line-2 {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
   font-size: 17px;
   padding-left: 0px;
   padding-top: 0px;
 }
-#description .line-3 {
+.main-description .line-3 {
   font-size: 17px;
   padding-left: 0px;
   padding-top: 0px;
 }
-#description .line-4 {
+.main-description .line-4 {
   font-size: 17px;
   padding-left: 0px;
   padding-top: 0px;
 }
-#description .conteiner-gallery {
+.main-description .conteiner-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 1200px;
 }
-#description .conteiner-gallery .gallery {
+.main-description .conteiner-gallery .gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
   width: 20%;
   height: 100%;
 }
-#description .conteiner-gallery .gallery :hover {
+.main-description .conteiner-gallery .gallery :hover {
   border: 1px solid #777;
 }
-#description .conteiner-gallery .gallery img {
+.main-description .conteiner-gallery .gallery img {
   width: 100%;
   height: auto;
 }
-#description .conteiner-gallery .gallery .desc {
+.main-description .conteiner-gallery .gallery .desc {
   padding: 15px;
   text-align: center;
 }

@@ -1,37 +1,6 @@
 .grid-container-form {
-  padding: 100px 30px;
+  padding: 1px 1px;
   width: 100%;
   margin: 0 auto;
-  max-width: 800px;
-}
-.grid-container-form .image-stack {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  position: relative;
-}
-.grid-container-form .image-stack .image-stack__item—top {
-  grid-column: 1 / span 8;
-  grid-row: 1;
-  padding-top: 20%;
-  z-index: 1;
-}
-.grid-container-form .image-stack .image-stack__item—bottom {
-  grid-column: 4;
-  grid-row: 1;
-}
-.grid-container-form .a {
-  position: relative;
-  /*cambia este valor a static para ver la diferencia*/
-  width: 300px;
-  height: 300px;
-  border: 2px dotted purple;
-}
-.grid-container-form .b {
-  position: absolute;
-  background-color: #e1f4fc;
-  top: 60px;
-  right: 0px;
-  width: 200px;
-  height: 80px;
-  border: 3px solid blue;
+  max-width: 1200px;
 }
