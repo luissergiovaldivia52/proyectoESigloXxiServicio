@@ -1,3 +1,6 @@
+.absolute {
+  position: absolute;
+}
 .menu {
   display: flex;
   flex-direction: row;
@@ -5,8 +8,8 @@
   align-content: center;
   height: 80px;
   padding: 10px;
-  background-color: #F6F6F6;
-  color: #454A59;
+  background-color: #16A5A3;
+  color: #F6F6F6;
 }
 .menu .logo {
   display: flex;
@@ -42,7 +45,7 @@
   margin: auto;
 }
 .menu .titulo-list .list .list-item a {
-  color: #454A59;
+  color: #F6F6F6;
   text-align: center;
   padding: 8px 5px;
   margin: 5px;

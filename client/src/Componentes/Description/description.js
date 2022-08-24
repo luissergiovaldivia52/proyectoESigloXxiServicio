@@ -4,7 +4,13 @@ import ImagenDesList from "./ImagenDes/imagenDesList";
 
 function Description() {
   return (
-    <div id="description">
+
+    <div className="main-description">
+      <div className="container-description">
+        {/*   banner-container */}
+        <div className="content-description"></div>
+
+
       <h1 className="description">
         <br />
         <span className="line-1">Descripcion </span>
@@ -15,19 +21,7 @@ function Description() {
         Se manejan las tecnologías:
           <br />
           <br/>
-          {/* <span>-Javascript</span>
-          <br />
-          <span>-React.js</span>
-          <br />
-          <span>-Node.js</span>
-          <br />
-          <span>-Express</span>
-          <br />
-          <span>-Sequelize</span>
-          <br />
-          <span> -PostgreSQL </span>
-          <br />
-          <span></span> */}
+   
   <ImagenDesList/>
         </span>
         <br />
@@ -63,8 +57,9 @@ tales como instalación, calibración y diseño de , automatización, electricid
         <br />
         <br />
       </h1>
-    
-    </div>
+      </div>
+      </div>
+  
 
   );
 }
