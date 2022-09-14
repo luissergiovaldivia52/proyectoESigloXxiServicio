@@ -40,6 +40,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
+  list-style: none;
   padding: 10px;
   width: 70%;
   margin: auto;

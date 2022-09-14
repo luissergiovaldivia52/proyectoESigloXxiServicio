@@ -102,81 +102,116 @@ function FormContainer() {
           </div>
 
           <form className="form">
-            <ul>
-              <li>
-                <label for="firstName">First name : </label>
+            {/*Nombre */}
+            <div className="name-apellido">
+              <div className="name-label">
+                <label>
+                  First name :{" "}
+                  </label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    value={firstName}
+                    // onChange={(event) => setFirstName(event.target.value)}
+                    onChange={onChange}
+                  />
+                {/* </label> */}
+              </div>
 
+              {/*Apellido */}
+              <div className="apellido-label">
+                <label>
+                  Last name :{" "}
+                  </label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    value={lastName}
+                    // onChange={(event) => setLastName(event.target.value)}
+                    onChange={onChange}
+                  />
+               
+              </div>
+            </div>
+            <br />
+
+            <div className="mail-phone">
+              {/*mail*/}
+              <div className="mail-label">
+                <label>
+                  Email :{" "}
+                  </label>
+                  <input
+                    type="mail"
+                    name="email"
+                    value={email}
+                    required
+                    // onChange={(event) => setMail(event.target.value)}
+                    onChange={onChange}
+                  />
+             
+              </div>
+
+              {/*phone */}
+              <div className="phone-label">
+                <label>
+                  Phone :{" "}
+                  </label>
+                  <input
+                    type="text"
+                    name="mobileNumberClient"
+                    value={mobileNumberClient}
+                    // onChange={(event) => setPhone(event.target.value)}
+                    onChange={onChange}
+                  />
+           
+              </div>
+            </div>
+
+            {/*address */}
+            <div className="address-label">
+              <label>
+                Address :{" "}
+                </label>
                 <input
                   type="text"
-                  id="firstName"
-                  name="firstName"
-                  value={firstName}
-                  onChange={onChange}
-                />
-              </li>
-              <li>
-                <label for="lastName">Last name : </label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  value={lastName}
-                  onChange={onChange}
-                />
-              </li>
-              <li>
-                <label for="mail">E-mail:</label>
-                <input
-                  type="email"
-                  id="mail"
-                  name="email"
-                  value={email}
-                  onChange={onChange}
-                />
-              </li>
-              <li>
-                <label for="address"> Address : </label>
-                <input
-                  type="text"
-                  id="address"
                   name="address"
                   value={address}
+                  // onChange={(event) => setAddress(event.target.value)}
                   onChange={onChange}
                 />
-              </li>
-              <li>
-                <label for="mobileNumberClient"> Phone : </label>
-                <input
-                  type="text"
-                  id="mobileNumberClient"
-                  name="mobileNumberClient"
-                  value={mobileNumberClient}
-                  onChange={onChange}
-                />
-              </li>
-              <li>
-                <label for="msg">Message:</label>
-                <textarea
-                  id="msg"
-                  name="message"
-                  required
-                  value={message}
-                  onChange={onChange}
-                ></textarea>
-              </li>
+           
+            </div>
 
-              <li class="button">
-              
-                <button
-                  type="submit"
-                  className="button"
-                  disabled={disable}
-                  onClick={toggle}
-                >
-                  Enviar
-                </button>
-              </li>
-            </ul>
+            {/*asunto */}
+            <div className="asunto-label">{/* <label>Asunto</label> */}</div>
+            {/* 
+            <input
+              type="text"
+              name="asunto"
+              value={asunto}
+              onChange={(event) => setAsunto(event.target.value)}
+            /> */}
+            {/*mensaje */}
+            <div className="escribe-label">
+              <label>Escribe su mensaje aqui</label>
+            </div>
+            <textarea
+              name="message"
+              required
+              value={message}
+              // onChange={(event) => setMessage(event.target.value)}
+              onChange={onChange}
+            ></textarea>
+
+            <button
+              type="submit"
+              className="button"
+              disabled={disable}
+              onClick={toggle}
+            >
+              Enviar
+            </button>
           </form>
         </div>
       </div>
