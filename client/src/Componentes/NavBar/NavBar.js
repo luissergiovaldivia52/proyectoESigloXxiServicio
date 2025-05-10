@@ -1,34 +1,32 @@
 import React from "react";
 import { NavLink, Router } from "react-router-dom";
 
-import Logo from "./Img/Logo.jpg";
+import Logo from "./Img/logo_eSiglo.jpg";
 
 import "./NavBar.css";
 
 function NavBar() {
   return (
-    <nav className="menu">
-      <div className="logo">
-        <img
-          id="logoHenry"
-          src= {Logo}  //{Logo}
-          width="100"
-          height="100"
-          className="d-inline-block align-top"
-          alt=""
-        />
-      </div>
-      <div className="titulo-list">
-        <h2 className="titulonav">eSigloXXI servicios</h2>
-        <ul className="list">
-          <li className="list-item">
-            <NavLink exact to="/">Inicio</NavLink>
-            {/* <NavLink to="rovers">Home</NavLink> */}
-            <NavLink to="description">Nosotros</NavLink>
-            
-            <NavLink to="contactarnos">Contactarnos</NavLink>
-          </li>
-        </ul>
+    <nav>
+      <img
+        id="logoHenry"
+        src={Logo} //{Logo}
+        width="100"
+        height="100"
+        className="d-inline-block align-top"
+        alt=""
+      />
+
+      <div className="enlace">
+        <NavLink exact to="/" className="enlace-base">
+          Inicio
+        </NavLink>
+        <NavLink to="description" className="enlace-base">
+          Nosotros
+        </NavLink>
+        <NavLink to="contactarnos" className="enlace-base">
+          Contactarnos
+        </NavLink>
       </div>
     </nav>
   );

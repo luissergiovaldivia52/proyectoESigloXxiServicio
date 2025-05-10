@@ -4,23 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import store from "../src/Redux/store";
-//import { Provider } from "react-redux";
-import { BrowserRouter  } from "react-router-dom";
-//import axios from "axios";
-//import dotenv from 'react-dotenv';
-//dotenv.config();
-//console.log(process.env.REACT_APP_API);
-//axios.defaults.baseURL = process.env.REACT_APP_API || 'http://localhost:3001';
+
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-   <React.StrictMode>
-    {/* <Provider store={store}> */}
-      <BrowserRouter>
-        <App />
-       
-      </BrowserRouter>
-    {/* </Provider>  */}
-   </React.StrictMode>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
 
   document.getElementById("root")
 );
