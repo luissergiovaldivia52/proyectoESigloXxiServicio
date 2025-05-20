@@ -1,6 +1,11 @@
 @import "../mixins.less";
 
 .main-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Añade un padding general para evitar que el contenido toque los bordes */
+
   background: radial-gradient(
     79.43% 251.58% at 23.18% 73.07%,
     #225b79,
@@ -10,76 +15,115 @@
     #102b39 100%,
     #010304 0
   );
-  @media screen and (min-width: 1024px) {
-    .container-description {
-      // display: grid;
-      // grid-template-columns: repeat(2, 1fr);
-      max-width: 1200px;
-      margin: auto;
+
+  h1 {
+    font-size: 20px;
+    // color: #262626;
+    color: #add8e6;
+  }
+  h2 {
+    font-size: 16px;
+    // color: #262626;
+    color: #add8e6;
+    //margin: 10px 0; /* Añade un margen inferior para separar el título del siguiente elemento */
+    padding: 20px;
+  }
+
+  p {
+    // color: #262626;
+    color: #add8e6;
+    margin: 10px 0; /* Añade un margen inferior para separar el párrafo del siguiente elemento */
+  }
+  .conteiner-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    //  height: 100vh;
+    /* Card */
+    .card {
+      position: relative;
+      width: 400px; /*  es el original 300px */
+      height: 280px; /* es el original 200px */
+      margin: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
+
+      /* * tag Imagenes */
+      .img,
+      .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      /* Imagenes */
+      .img {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      /* !Este hover hace que el fondo del texto tape la image y aparesca el texto*/
+
+      &:hover {
+        .content {
+          &::before {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+
+          .text {
+            transform: translateX(0);
+            transition-delay: 0.8s; /* Cambia el retraso de la transición a 0s */
+          }
+        }
+      }
+
+      /* Texto */
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        //color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          transform: scaleX(0);
+          transition: transform 0.5s;
+          transform-origin: right;
+          transition-delay: 0.5s;
+        }
+
+        .text {
+          z-index: 1;
+          padding: 30px;
+          transform: translateX(-400px);
+          transition: all 0.5s;
+
+          h3 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+          p {
+            color: #262626;
+          }
+        }
+      }
     }
   }
-  padding: 2rem 1rem 0;
-
-  .s-center(center);
-  .media(1.5rem);
-  line-height: 0.6;
-  .line-1 {
-    font-family: "Roboto Condensed", sans-serif;
-    color: #ffffff;
-    font-size: 36px;
-    margin-top: 50px;
-  }
-
-  .line-2 {
-    font-family: "Roboto Condensed", sans-serif;
-    color: #ffffff;
-    font-size: 17px;
-
-    padding-left: 0px;
-    padding-top: 0px;
-  }
-  .line-3 {
-    font-size: 17px;
-
-    padding-left: 0px;
-    padding-top: 0px;
-  }
-  .line-4 {
-    font-size: 17px;
-
-    padding-left: 0px;
-    padding-top: 0px;
-  }
-  // .conteiner-gallery {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   justify-content: center;
-  //   // max-width: 1200px;
-  //   // margin: auto;
-
-  //   align-items: center;
-
-  //   // position: relative;
-  //   width: 1200px;
-  //   .gallery {
-  //     margin: 5px;
-  //     border: 1px solid #ccc;
-  //     float: left;
-
-  //     width: 20%;
-  //     height: 100%;
-
-  //     :hover {
-  //       border: 1px solid #777;
-  //     }
-  //     img {
-  //       width: 100%;
-  //       height: auto;
-  //     }
-  //     .desc {
-  //       padding: 15px;
-  //       text-align: center;
-  //     }
-  //   }
-  // }
 }

@@ -1,16 +1,23 @@
 @import "./Componentes/mixins.less";
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
 
-body {
-  height: 100%;
-  width: 100;
-  margin: 0;
+// body {
+//   height: 100%;
+//   width: 100;
+//   margin: 0;
+//   // font-family: Roboto, sans-serif;
+// }
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-body {
-  font-family: Roboto, sans-serif;
-  line-height: 1.6;
-}
+// @media screen and (min-width: 486px) and (max-width: 486px) {
+//   .s-center(left);
+// }
 
 @media screen and (min-width: 1024px) {
   .s-center(left);

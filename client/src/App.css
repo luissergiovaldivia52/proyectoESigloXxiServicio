@@ -8,14 +8,11 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyxSmxpg.ttf) format('truetype');
 }
-body {
-  height: 100%;
-  width: 100;
-  margin: 0;
-}
-body {
-  font-family: Roboto, sans-serif;
-  line-height: 1.6;
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 @media screen and (min-width: 1024px) {
   text-align: left;

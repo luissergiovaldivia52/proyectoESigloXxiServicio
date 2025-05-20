@@ -2,42 +2,104 @@
   position: absolute;
 }
 .main-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  /* Añade un padding general para evitar que el contenido toque los bordes */
   background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #225b79, #3892c2 44.41%, #216080 56.43%, #19475f 69.58%, #102b39 100%, #010304 0);
-  padding: 2rem 1rem 0;
+}
+.main-description h1 {
+  font-size: 20px;
+  color: #add8e6;
+}
+.main-description h2 {
+  font-size: 16px;
+  color: #add8e6;
+  padding: 20px;
+}
+.main-description p {
+  color: #add8e6;
+  margin: 10px 0;
+  /* Añade un margen inferior para separar el párrafo del siguiente elemento */
+}
+.main-description .conteiner-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Card */
+}
+.main-description .conteiner-gallery .card {
+  position: relative;
+  width: 400px;
+  /*  es el original 300px */
+  height: 280px;
+  /* es el original 200px */
+  margin: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
+  /* * tag Imagenes */
+  /* Imagenes */
+  /* !Este hover hace que el fondo del texto tape la image y aparesca el texto*/
+  /* Texto */
+}
+.main-description .conteiner-gallery .card .img,
+.main-description .conteiner-gallery .card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-description .conteiner-gallery .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.main-description .conteiner-gallery .card:hover .content::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.main-description .conteiner-gallery .card:hover .content .text {
+  transform: translateX(0);
+  transition-delay: 0.8s;
+  /* Cambia el retraso de la transición a 0s */
+}
+.main-description .conteiner-gallery .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
   text-align: center;
-  line-height: 0.6;
+  padding: 10px;
 }
-@media screen and (min-width: 1024px) {
-  .main-description .container-description {
-    max-width: 1200px;
-    margin: auto;
-  }
+.main-description .conteiner-gallery .card .content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin: right;
+  transition-delay: 0.5s;
 }
-@media screen and (min-width: 1024px) {
-  .main-description {
-    font-size: 1.5rem;
-  }
+.main-description .conteiner-gallery .card .content .text {
+  z-index: 1;
+  padding: 30px;
+  transform: translateX(-400px);
+  transition: all 0.5s;
 }
-.main-description .line-1 {
-  font-family: "Roboto Condensed", sans-serif;
-  color: #ffffff;
-  font-size: 36px;
-  margin-top: 50px;
+.main-description .conteiner-gallery .card .content .text h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.main-description .line-2 {
-  font-family: "Roboto Condensed", sans-serif;
-  color: #ffffff;
-  font-size: 17px;
-  padding-left: 0px;
-  padding-top: 0px;
-}
-.main-description .line-3 {
-  font-size: 17px;
-  padding-left: 0px;
-  padding-top: 0px;
-}
-.main-description .line-4 {
-  font-size: 17px;
-  padding-left: 0px;
-  padding-top: 0px;
+.main-description .conteiner-gallery .card .content .text p {
+  color: #262626;
 }
